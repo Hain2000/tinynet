@@ -13,28 +13,54 @@
 #include <vector>
 #include <memory>
 #include "nocopyable.h"
-#include <>
+#include <future>
+#include <utility>
+#include <type_traits>
 namespace tinynet {
 
-class thread_pool : nocopyable {
-public:
-    thread_pool();
-    ~thread_pool();
+static constexpr int MIN_NUM_THREADS_IN_POOL = 2;
 
-    void Emplace(std::function<void()> &&);
+
+class ThreadPool {
+public:
+
+    explicit ThreadPool(int size = std::thread::hardware_concurrency() - 1);
+
+    ~ThreadPool();
+
+    template <typename F, typename... Args>
+    decltype(auto) Emplace(F &&new_task, Args &&...args);
+
+    void Exit();
+
+    auto GetSize() -> size_t { return threads_.size(); };
 
 private:
-    int usable_q_;
-    bool stop_;
-
-    std::vector<std::thread> workers_;
-    // 双任务队列，一条一直在被外界放任务，一条一直在被线程消费执行任务
-    std::queue<std::function<void()>> tasks_[2];
-
-    std::mutex thread_mtx_;  // ִ线程用锁
-    std::mutex q_mtx_;       // 切换任务队列锁
+    std::vector<std::thread> threads_;
+    std::queue<std::function<void()>> tasks_;
+    std::mutex mtx_;
     std::condition_variable cv_;
+    std::atomic<bool> stop_{false};
 };
+
+template <typename F, typename... Args>
+auto ThreadPool::Emplace(F &&new_task, Args &&...args) -> decltype(auto) {
+    using return_type = std::invoke_result_t<F, Args...>;
+    if (stop_) {
+        throw std::runtime_error("ThreadPool: Emplace() called while already stop");
+    }
+    auto packaged_new_task = std::make_shared<std::packaged_task<return_type()>>(
+            std::bind(std::forward<F>(new_task), std::forward<Args>(args)...));
+    auto res = packaged_new_task->get_future();
+    {
+        std::unique_lock<std::mutex> lock(mtx_);
+        tasks_.emplace([packaged_new_task]() { (*packaged_new_task)(); });
+    }
+    cv_.notify_one();
+    return res;
+}
+
 
 }
 #endif //TINYNET_THREADPOOL_H
+

@@ -2,75 +2,45 @@
 // Created by Hain_official on 2023-09-14.
 //
 #include "ThreadPool.h"
-#include "options.h"
-using namespace tinynet;
 
-thread_pool::thread_pool()
-    : usable_q_(0)
-    , stop_(false) {
 
-    for (size_t i = 0; i < options::kThreadPoolNum; i++) {
-        workers_.emplace_back([this] {
+namespace tinynet {
+
+ThreadPool::ThreadPool(int size) {
+    size = std::max(size, MIN_NUM_THREADS_IN_POOL);
+    for (int i = 0; i < size; i++) {
+        threads_.emplace_back([this]() {
             while (true) {
                 std::function<void()> task;
-
                 {
-                    std::unique_lock<std::mutex> lock(thread_mtx_);
-                    this->cv_.wait(lock, [this] {
-                        return stop_ || !tasks_[usable_q_].empty() || tasks_[!usable_q_].empty();
-                    });
-
-                    if (stop_ && tasks_[usable_q_].empty() && tasks_[!usable_q_].empty()) {
+                    std::unique_lock<std::mutex> lock(mtx_);
+                    cv_.wait(lock, [this]() { return stop_ || !tasks_.empty(); });
+                    if (stop_ && tasks_.empty()) {
                         return;
                     }
-
-                    // 另一个任务队列为空的话，就把当前
-                    int task_q = !usable_q_;
-                    if (tasks_[task_q].empty()) {
-                        q_mtx_.lock();
-                        usable_q_ = task_q;
-                        q_mtx_.unlock();
-                    }
-                    task_q = !usable_q_;
-
-                    try {
-                        task = std::move(tasks_[task_q].front());
-                        tasks_[task_q].pop();
-                    } catch (std::exception &e) {
-                        // log
-                    }
-
+                    task = tasks_.front();
+                    tasks_.pop();
                 }
-
-                try {
-                    task();
-                } catch (std::exception &e) {
-                    // log
-                }
-
+                task();
             }
         });
     }
-
 }
 
-void thread_pool::Emplace(std::function<void()> &&f) {
-    if (stop_) {
-        // log
-        return;
+ThreadPool::~ThreadPool() {
+    Exit();
+    for (auto &worker : threads_) {
+        if (worker.joinable()) {
+            worker.join();
+        }
     }
-    std::unique_lock<std::mutex> lock(thread_mtx_);
-    tasks_[usable_q_].emplace(std::move(f));
-    lock.unlock();
-    cv_.notify_one();
 }
 
-thread_pool::~thread_pool() {
-    std::unique_lock<std::mutex> lock(thread_mtx_);
+void ThreadPool::Exit() {
     stop_ = true;
-    lock.unlock();
     cv_.notify_all();
-    for (auto &wk : workers_) {
-        wk.join();
-    }
+}
+
+
+
 }

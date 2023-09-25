@@ -123,87 +123,6 @@ tinynet/fast:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/build
 .PHONY : tinynet/fast
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/main.cpp.s
-.PHONY : main.cpp.s
-
-src/Logger.o: src/Logger.cpp.o
-
-.PHONY : src/Logger.o
-
-# target to build an object file
-src/Logger.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.o
-.PHONY : src/Logger.cpp.o
-
-src/Logger.i: src/Logger.cpp.i
-
-.PHONY : src/Logger.i
-
-# target to preprocess a source file
-src/Logger.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.i
-.PHONY : src/Logger.cpp.i
-
-src/Logger.s: src/Logger.cpp.s
-
-.PHONY : src/Logger.s
-
-# target to generate assembly for a file
-src/Logger.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.s
-.PHONY : src/Logger.cpp.s
-
-src/Socket.o: src/Socket.cpp.o
-
-.PHONY : src/Socket.o
-
-# target to build an object file
-src/Socket.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.o
-.PHONY : src/Socket.cpp.o
-
-src/Socket.i: src/Socket.cpp.i
-
-.PHONY : src/Socket.i
-
-# target to preprocess a source file
-src/Socket.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.i
-.PHONY : src/Socket.cpp.i
-
-src/Socket.s: src/Socket.cpp.s
-
-.PHONY : src/Socket.s
-
-# target to generate assembly for a file
-src/Socket.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.s
-.PHONY : src/Socket.cpp.s
-
 src/ThreadPool.o: src/ThreadPool.cpp.o
 
 .PHONY : src/ThreadPool.o
@@ -231,32 +150,32 @@ src/ThreadPool.cpp.s:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/ThreadPool.cpp.s
 .PHONY : src/ThreadPool.cpp.s
 
-src/Time.o: src/Time.cpp.o
+test1/ThreadPool_test.o: test1/ThreadPool_test.cpp.o
 
-.PHONY : src/Time.o
+.PHONY : test1/ThreadPool_test.o
 
 # target to build an object file
-src/Time.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Time.cpp.o
-.PHONY : src/Time.cpp.o
+test1/ThreadPool_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o
+.PHONY : test1/ThreadPool_test.cpp.o
 
-src/Time.i: src/Time.cpp.i
+test1/ThreadPool_test.i: test1/ThreadPool_test.cpp.i
 
-.PHONY : src/Time.i
+.PHONY : test1/ThreadPool_test.i
 
 # target to preprocess a source file
-src/Time.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Time.cpp.i
-.PHONY : src/Time.cpp.i
+test1/ThreadPool_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.i
+.PHONY : test1/ThreadPool_test.cpp.i
 
-src/Time.s: src/Time.cpp.s
+test1/ThreadPool_test.s: test1/ThreadPool_test.cpp.s
 
-.PHONY : src/Time.s
+.PHONY : test1/ThreadPool_test.s
 
 # target to generate assembly for a file
-src/Time.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Time.cpp.s
-.PHONY : src/Time.cpp.s
+test1/ThreadPool_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.s
+.PHONY : test1/ThreadPool_test.cpp.s
 
 # Help Target
 help:
@@ -267,21 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tinynet"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... src/Logger.o"
-	@echo "... src/Logger.i"
-	@echo "... src/Logger.s"
-	@echo "... src/Socket.o"
-	@echo "... src/Socket.i"
-	@echo "... src/Socket.s"
 	@echo "... src/ThreadPool.o"
 	@echo "... src/ThreadPool.i"
 	@echo "... src/ThreadPool.s"
-	@echo "... src/Time.o"
-	@echo "... src/Time.i"
-	@echo "... src/Time.s"
+	@echo "... test1/ThreadPool_test.o"
+	@echo "... test1/ThreadPool_test.i"
+	@echo "... test1/ThreadPool_test.s"
 .PHONY : help
 
 

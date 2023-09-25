@@ -57,22 +57,9 @@ include CMakeFiles/tinynet.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/tinynet.dir/flags.make
 
-CMakeFiles/tinynet.dir/main.cpp.o: CMakeFiles/tinynet.dir/flags.make
-CMakeFiles/tinynet.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tinynet.dir/main.cpp.o"
-	/usr/bin/clang++-12  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/main.cpp.o -c /home/hain/tinynet/main.cpp
-
-CMakeFiles/tinynet.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/main.cpp.i"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/main.cpp > CMakeFiles/tinynet.dir/main.cpp.i
-
-CMakeFiles/tinynet.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/main.cpp.s"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/main.cpp -o CMakeFiles/tinynet.dir/main.cpp.s
-
 CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o: CMakeFiles/tinynet.dir/flags.make
 CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o: ../src/ThreadPool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o"
 	/usr/bin/clang++-12  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o -c /home/hain/tinynet/src/ThreadPool.cpp
 
 CMakeFiles/tinynet.dir/src/ThreadPool.cpp.i: cmake_force
@@ -83,64 +70,32 @@ CMakeFiles/tinynet.dir/src/ThreadPool.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/ThreadPool.cpp.s"
 	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/ThreadPool.cpp -o CMakeFiles/tinynet.dir/src/ThreadPool.cpp.s
 
-CMakeFiles/tinynet.dir/src/Socket.cpp.o: CMakeFiles/tinynet.dir/flags.make
-CMakeFiles/tinynet.dir/src/Socket.cpp.o: ../src/Socket.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/tinynet.dir/src/Socket.cpp.o"
-	/usr/bin/clang++-12  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/src/Socket.cpp.o -c /home/hain/tinynet/src/Socket.cpp
+CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o: CMakeFiles/tinynet.dir/flags.make
+CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o: ../test1/ThreadPool_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o"
+	/usr/bin/clang++-12  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o -c /home/hain/tinynet/test1/ThreadPool_test.cpp
 
-CMakeFiles/tinynet.dir/src/Socket.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/src/Socket.cpp.i"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/src/Socket.cpp > CMakeFiles/tinynet.dir/src/Socket.cpp.i
+CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.i"
+	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/test1/ThreadPool_test.cpp > CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.i
 
-CMakeFiles/tinynet.dir/src/Socket.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/Socket.cpp.s"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/Socket.cpp -o CMakeFiles/tinynet.dir/src/Socket.cpp.s
-
-CMakeFiles/tinynet.dir/src/Logger.cpp.o: CMakeFiles/tinynet.dir/flags.make
-CMakeFiles/tinynet.dir/src/Logger.cpp.o: ../src/Logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tinynet.dir/src/Logger.cpp.o"
-	/usr/bin/clang++-12  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/src/Logger.cpp.o -c /home/hain/tinynet/src/Logger.cpp
-
-CMakeFiles/tinynet.dir/src/Logger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/src/Logger.cpp.i"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/src/Logger.cpp > CMakeFiles/tinynet.dir/src/Logger.cpp.i
-
-CMakeFiles/tinynet.dir/src/Logger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/Logger.cpp.s"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/Logger.cpp -o CMakeFiles/tinynet.dir/src/Logger.cpp.s
-
-CMakeFiles/tinynet.dir/src/Time.cpp.o: CMakeFiles/tinynet.dir/flags.make
-CMakeFiles/tinynet.dir/src/Time.cpp.o: ../src/Time.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tinynet.dir/src/Time.cpp.o"
-	/usr/bin/clang++-12  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/src/Time.cpp.o -c /home/hain/tinynet/src/Time.cpp
-
-CMakeFiles/tinynet.dir/src/Time.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/src/Time.cpp.i"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/src/Time.cpp > CMakeFiles/tinynet.dir/src/Time.cpp.i
-
-CMakeFiles/tinynet.dir/src/Time.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/Time.cpp.s"
-	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/Time.cpp -o CMakeFiles/tinynet.dir/src/Time.cpp.s
+CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.s"
+	/usr/bin/clang++-12 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/test1/ThreadPool_test.cpp -o CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.s
 
 # Object files for target tinynet
 tinynet_OBJECTS = \
-"CMakeFiles/tinynet.dir/main.cpp.o" \
 "CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o" \
-"CMakeFiles/tinynet.dir/src/Socket.cpp.o" \
-"CMakeFiles/tinynet.dir/src/Logger.cpp.o" \
-"CMakeFiles/tinynet.dir/src/Time.cpp.o"
+"CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o"
 
 # External object files for target tinynet
 tinynet_EXTERNAL_OBJECTS =
 
-tinynet: CMakeFiles/tinynet.dir/main.cpp.o
 tinynet: CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o
-tinynet: CMakeFiles/tinynet.dir/src/Socket.cpp.o
-tinynet: CMakeFiles/tinynet.dir/src/Logger.cpp.o
-tinynet: CMakeFiles/tinynet.dir/src/Time.cpp.o
+tinynet: CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o
 tinynet: CMakeFiles/tinynet.dir/build.make
 tinynet: CMakeFiles/tinynet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable tinynet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hain/tinynet/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable tinynet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tinynet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
