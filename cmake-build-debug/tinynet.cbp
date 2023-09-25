@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="tinynet"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="clang"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/hain/tinynet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/hain/tinynet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/hain/tinynet/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tinynet">
+				<Option output="/home/hain/tinynet/cmake-build-debug/tinynet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hain/tinynet/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/hain/tinynet/."/>
+					<Add directory="/home/hain/tinynet/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-12/lib/clang/12.0.0/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 tinynet"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="tinynet/fast">
+				<Option output="/home/hain/tinynet/cmake-build-debug/tinynet" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hain/tinynet/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/hain/tinynet/."/>
+					<Add directory="/home/hain/tinynet/include"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/9/../../../../include/c++/9/backward"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/llvm-12/lib/clang/12.0.0/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 tinynet/fast"/>
+					<CompileFile command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j16 -f &quot;/home/hain/tinynet/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/hain/tinynet/include/Logger.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/Socket.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/ThreadPool.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/Time.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/nocopyable.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/options.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/utils.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/main.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/Logger.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/Socket.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/ThreadPool.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/Time.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
