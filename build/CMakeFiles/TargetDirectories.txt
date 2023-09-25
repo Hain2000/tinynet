@@ -1,0 +1,3 @@
+/home/hain/tinynet/build/CMakeFiles/rebuild_cache.dir
+/home/hain/tinynet/build/CMakeFiles/edit_cache.dir
+/home/hain/tinynet/build/CMakeFiles/tinynet.dir
