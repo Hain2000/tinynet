@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o"
-  "CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o"
+  "CMakeFiles/tinynet.dir/src/Logger.cpp.o"
+  "CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o"
   "tinynet"
   "tinynet.pdb"
 )

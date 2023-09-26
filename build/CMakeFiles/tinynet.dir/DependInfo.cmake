@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hain/tinynet/src/ThreadPool.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o"
-  "/home/hain/tinynet/test1/ThreadPool_test.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o"
+  "/home/hain/tinynet/src/Logger.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/src/Logger.cpp.o"
+  "/home/hain/tinynet/test1/Logger1_test.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

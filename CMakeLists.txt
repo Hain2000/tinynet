@@ -9,8 +9,7 @@ include_directories(.)
 include_directories(include)
 
 add_executable(tinynet
-        include/ThreadPool.h
-        include/nocopyable.h
-        src/ThreadPool.cpp
-        test1/ThreadPool_test.cpp
+        src/Logger.cpp
+        include/Logger.h
+        test1/Logger1_test.cpp
 )

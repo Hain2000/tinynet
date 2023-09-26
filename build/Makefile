@@ -123,59 +123,59 @@ tinynet/fast:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/build
 .PHONY : tinynet/fast
 
-src/ThreadPool.o: src/ThreadPool.cpp.o
+src/Logger.o: src/Logger.cpp.o
 
-.PHONY : src/ThreadPool.o
-
-# target to build an object file
-src/ThreadPool.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o
-.PHONY : src/ThreadPool.cpp.o
-
-src/ThreadPool.i: src/ThreadPool.cpp.i
-
-.PHONY : src/ThreadPool.i
-
-# target to preprocess a source file
-src/ThreadPool.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/ThreadPool.cpp.i
-.PHONY : src/ThreadPool.cpp.i
-
-src/ThreadPool.s: src/ThreadPool.cpp.s
-
-.PHONY : src/ThreadPool.s
-
-# target to generate assembly for a file
-src/ThreadPool.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/ThreadPool.cpp.s
-.PHONY : src/ThreadPool.cpp.s
-
-test1/ThreadPool_test.o: test1/ThreadPool_test.cpp.o
-
-.PHONY : test1/ThreadPool_test.o
+.PHONY : src/Logger.o
 
 # target to build an object file
-test1/ThreadPool_test.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o
-.PHONY : test1/ThreadPool_test.cpp.o
+src/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.o
+.PHONY : src/Logger.cpp.o
 
-test1/ThreadPool_test.i: test1/ThreadPool_test.cpp.i
+src/Logger.i: src/Logger.cpp.i
 
-.PHONY : test1/ThreadPool_test.i
+.PHONY : src/Logger.i
 
 # target to preprocess a source file
-test1/ThreadPool_test.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.i
-.PHONY : test1/ThreadPool_test.cpp.i
+src/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
 
-test1/ThreadPool_test.s: test1/ThreadPool_test.cpp.s
+src/Logger.s: src/Logger.cpp.s
 
-.PHONY : test1/ThreadPool_test.s
+.PHONY : src/Logger.s
 
 # target to generate assembly for a file
-test1/ThreadPool_test.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.s
-.PHONY : test1/ThreadPool_test.cpp.s
+src/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
+test1/Logger1_test.o: test1/Logger1_test.cpp.o
+
+.PHONY : test1/Logger1_test.o
+
+# target to build an object file
+test1/Logger1_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o
+.PHONY : test1/Logger1_test.cpp.o
+
+test1/Logger1_test.i: test1/Logger1_test.cpp.i
+
+.PHONY : test1/Logger1_test.i
+
+# target to preprocess a source file
+test1/Logger1_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.i
+.PHONY : test1/Logger1_test.cpp.i
+
+test1/Logger1_test.s: test1/Logger1_test.cpp.s
+
+.PHONY : test1/Logger1_test.s
+
+# target to generate assembly for a file
+test1/Logger1_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.s
+.PHONY : test1/Logger1_test.cpp.s
 
 # Help Target
 help:
@@ -186,12 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tinynet"
-	@echo "... src/ThreadPool.o"
-	@echo "... src/ThreadPool.i"
-	@echo "... src/ThreadPool.s"
-	@echo "... test1/ThreadPool_test.o"
-	@echo "... test1/ThreadPool_test.i"
-	@echo "... test1/ThreadPool_test.s"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
+	@echo "... test1/Logger1_test.o"
+	@echo "... test1/Logger1_test.i"
+	@echo "... test1/Logger1_test.s"
 .PHONY : help
 
 

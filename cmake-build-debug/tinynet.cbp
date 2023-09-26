@@ -86,10 +86,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hain/tinynet/include/Logger.h">
+			<Option target="tinynet"/>
+		</Unit>
 		<Unit filename="/home/hain/tinynet/include/ThreadPool.h">
 			<Option target="tinynet"/>
 		</Unit>
 		<Unit filename="/home/hain/tinynet/include/nocopyable.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/Logger.cpp">
 			<Option target="tinynet"/>
 		</Unit>
 		<Unit filename="/home/hain/tinynet/src/ThreadPool.cpp">

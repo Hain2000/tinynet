@@ -123,6 +123,33 @@ tinynet/fast:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/build
 .PHONY : tinynet/fast
 
+src/Logger.o: src/Logger.cpp.o
+
+.PHONY : src/Logger.o
+
+# target to build an object file
+src/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.o
+.PHONY : src/Logger.cpp.o
+
+src/Logger.i: src/Logger.cpp.i
+
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
 src/ThreadPool.o: src/ThreadPool.cpp.o
 
 .PHONY : src/ThreadPool.o
@@ -186,6 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tinynet"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
 	@echo "... src/ThreadPool.o"
 	@echo "... src/ThreadPool.i"
 	@echo "... src/ThreadPool.s"

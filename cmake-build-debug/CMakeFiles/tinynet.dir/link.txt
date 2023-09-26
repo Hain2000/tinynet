@@ -1,1 +1,1 @@
-/usr/bin/clang++-12  -pthread -g   CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o  -o tinynet 
+/usr/bin/clang++-12  -pthread -g   CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o CMakeFiles/tinynet.dir/test1/ThreadPool_test.cpp.o CMakeFiles/tinynet.dir/src/Logger.cpp.o  -o tinynet 

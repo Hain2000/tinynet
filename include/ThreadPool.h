@@ -12,7 +12,6 @@
 #include <queue>
 #include <vector>
 #include <memory>
-#include "nocopyable.h"
 #include <future>
 #include <utility>
 #include <type_traits>
