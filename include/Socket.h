@@ -6,7 +6,6 @@
 #define TINYNET_SOCKET_H
 
 #include "utils.h"
-#include "options.h"
 
 #include <arpa/inet.h>
 #include <sys/types.h>

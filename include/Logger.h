@@ -6,6 +6,12 @@
 #define TINYNET_LOGGER_H
 #include <ctime>
 #include <string>
+#include <functional>
+#include <queue>
+#include <thread>
+#include <mutex>
+#include <atomic>
+#include <condition_variable>
 
 #define LOG_INFO(x) tinynet::Logger::LogMsg(tinynet::LogLevel::INFO, (x));
 #define LOG_WARNING(x) tinynet::Logger::LogMsg(tinynet::LogLevel::WARNING, (x));
@@ -14,8 +20,11 @@
 
 namespace tinynet {
 
+const std::string LOG_PATH = std::string("TinyNetLog");
+constexpr int MAX_LOG_QUEUE = 1000;
+constexpr std::chrono::duration REFRESH_TIME = std::chrono::microseconds(3000);
 
-    // 日志级别  INFO  ERROR  FATAL
+// 日志级别  INFO  ERROR  FATAL
 enum LogLevel {
     INFO,     // 普通信息
     ERROR,    // 错误信息
@@ -42,7 +51,20 @@ public:
     static Logger &Instance();
 
 private:
+    explicit Logger(const std::function<void(const std::deque<Log> &logs)> &log_strategy);
 
+    ~Logger();
+
+    void writing_log();
+    void push_log(Log &&log);
+
+    std::function<void(const std::deque<Log> &)> log_strategy_func_;
+    std::deque<Log> q_; //
+    std::atomic<bool> stop_{false};
+    std::mutex mtx_;
+    std::thread log_writer_;
+    std::condition_variable cv_;
+    std::chrono::microseconds last_flush_;
 };
 
 
