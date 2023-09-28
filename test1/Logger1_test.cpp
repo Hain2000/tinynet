@@ -8,13 +8,13 @@
 
 // using namespace tinynet;
 
-auto GetCurTime() -> std::chrono::milliseconds {
+auto GetCurTime() -> std::chrono::seconds {
     using namespace std::chrono;
     // 系统时间指的是 1970年1月1日0时0分0秒起至现在的总秒数
     // 这里time_since_epoch()的返回值是类型是时间长度（duration类型），即从纪元起点到now对应时间点间的时间长度。
     // 时间长度类型可以通过count()转化为数值类型，方便进一步在其他代码中使用
     // 时间转换
-    return duration_cast<milliseconds>(system_clock::now().time_since_epoch());
+    return duration_cast<seconds>(system_clock::now().time_since_epoch());
 }
 
 auto GetCurDate() -> std::string {
@@ -26,10 +26,9 @@ auto GetCurDate() -> std::string {
 }
 
 int main() {
-    std::cout << GetCurDate() << std::endl;
-    std::cout << GetCurTime().count() << std::endl;
-    LOG_WARNING("YYDS")
-    LOG_ERROR("AABB")
-    LOG_INFO("114514")
-    LOG_FATAL("1919810")
+    auto t1 =  GetCurTime().count();
+    for (int i = 0; i <= 10000000; i++) {
+        LOG_INFO("HAIN" + std::to_string(i) + "hain");
+    }
+    std::cout << GetCurTime().count() - t1 << "\n";
 }

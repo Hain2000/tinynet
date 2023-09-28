@@ -5,7 +5,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/hain/tinynet/src/Logger.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/src/Logger.cpp.o"
-  "/home/hain/tinynet/test1/Logger1_test.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o"
+  "/home/hain/tinynet/src/NetAddress.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/src/NetAddress.cpp.o"
+  "/home/hain/tinynet/src/Socket.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/src/Socket.cpp.o"
+  "/home/hain/tinynet/test1/Socket_test.cpp" "/home/hain/tinynet/build/CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

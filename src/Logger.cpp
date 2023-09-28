@@ -32,7 +32,7 @@ auto GetCurDate() -> std::string {
     return stream.str();
 }
 
-void ScreenStrategy(const std::deque<Logger::Log> &logs) {
+void ScreenStrategy(const std::vector<Logger::Log> &logs) {
     std::for_each(logs.begin(), logs.end(), [](const auto &log) { std::cout << log; });
 }
 
@@ -50,18 +50,18 @@ struct FStream {
         }
     }
 
-    void WriteAll(const std::deque<Logger::Log> &logs) {
+    void WriteAll(const std::vector<Logger::Log> &logs) {
         std::for_each(logs.begin(), logs.end(), [this](auto &log) { f_ << log; });
         f_.flush();
     }
 };
 
-void FileStrategy(const std::deque<Logger::Log> &logs) {
+void FileStrategy(const std::vector<Logger::Log> &logs) {
     static FStream writer;
     writer.WriteAll(logs);
 }
 
-    Logger::Logger(const std::function<void(const std::deque<Log> &)> &log_strategy) {
+Logger::Logger(const std::function<void(const std::vector<Log> &)> &log_strategy) {
     log_strategy_func_ = log_strategy;
     last_flush_ = GetCurTime();
     log_writer_ = std::thread(&Logger::writing_log, this);
@@ -72,9 +72,9 @@ void Logger::push_log(tinynet::Logger::Log &&log) {
     bool should_notify = false;
     {
         std::unique_lock<std::mutex> lock(mtx_);
-        q_.emplace_back(std::move(log));
+        logs_.emplace_back(std::move(log));
         milliseconds msec = GetCurTime();
-        if ((msec - last_flush_) > REFRESH_TIME || q_.size() > MAX_LOG_QUEUE) {
+        if ((msec - last_flush_) > REFRESH_TIME || logs_.size() > MAX_LOG_QUEUE) {
             should_notify = true;
         }
     }
@@ -84,7 +84,7 @@ void Logger::push_log(tinynet::Logger::Log &&log) {
 }
 
 Logger &Logger::Instance() {
-    static Logger logger{ScreenStrategy};
+    static Logger logger{FileStrategy};
     return logger;
 }
 
@@ -94,18 +94,18 @@ void Logger::LogMsg(tinynet::LogLevel log_level, const std::string &msg) noexcep
 }
 
 void Logger::writing_log() {
-    std::deque<Logger::Log> wq;
+    std::vector<Logger::Log> wv;
     while (true) {
         std::unique_lock<std::mutex> lock(mtx_);
         cv_.wait(lock, [this]() {
-            return stop_ || q_.size() > MAX_LOG_QUEUE || GetCurTime() - last_flush_ > REFRESH_TIME;
+            return stop_ || logs_.size() > MAX_LOG_QUEUE || GetCurTime() - last_flush_ > REFRESH_TIME;
         });
-        if (q_.size()) {
-            wq.swap(q_);
+        if (logs_.size()) {
+            wv.swap(logs_);
             lock.unlock();
-            log_strategy_func_(wq);
+            log_strategy_func_(wv);
             last_flush_ = GetCurTime();
-            wq.clear();
+            wv.clear();
         }
         if (stop_) {
             return;

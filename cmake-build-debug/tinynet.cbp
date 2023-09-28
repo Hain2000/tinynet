@@ -89,19 +89,22 @@
 		<Unit filename="/home/hain/tinynet/include/Logger.h">
 			<Option target="tinynet"/>
 		</Unit>
-		<Unit filename="/home/hain/tinynet/include/ThreadPool.h">
+		<Unit filename="/home/hain/tinynet/include/NetAddress.h">
 			<Option target="tinynet"/>
 		</Unit>
-		<Unit filename="/home/hain/tinynet/include/nocopyable.h">
+		<Unit filename="/home/hain/tinynet/include/Socket.h">
 			<Option target="tinynet"/>
 		</Unit>
 		<Unit filename="/home/hain/tinynet/src/Logger.cpp">
 			<Option target="tinynet"/>
 		</Unit>
-		<Unit filename="/home/hain/tinynet/src/ThreadPool.cpp">
+		<Unit filename="/home/hain/tinynet/src/NetAddress.cpp">
 			<Option target="tinynet"/>
 		</Unit>
-		<Unit filename="/home/hain/tinynet/test1/ThreadPool_test.cpp">
+		<Unit filename="/home/hain/tinynet/src/Socket.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/test1/Socket_test.cpp">
 			<Option target="tinynet"/>
 		</Unit>
 		<Unit filename="/home/hain/tinynet/CMakeLists.txt">

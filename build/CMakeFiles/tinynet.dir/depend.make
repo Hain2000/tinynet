@@ -4,6 +4,20 @@
 CMakeFiles/tinynet.dir/src/Logger.cpp.o: ../include/Logger.h
 CMakeFiles/tinynet.dir/src/Logger.cpp.o: ../src/Logger.cpp
 
-CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o: ../include/Logger.h
-CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o: ../test1/Logger1_test.cpp
+CMakeFiles/tinynet.dir/src/NetAddress.cpp.o: ../include/NetAddress.h
+CMakeFiles/tinynet.dir/src/NetAddress.cpp.o: ../src/NetAddress.cpp
+
+CMakeFiles/tinynet.dir/src/Socket.cpp.o: ../include/Logger.h
+CMakeFiles/tinynet.dir/src/Socket.cpp.o: ../include/NetAddress.h
+CMakeFiles/tinynet.dir/src/Socket.cpp.o: ../include/Socket.h
+CMakeFiles/tinynet.dir/src/Socket.cpp.o: ../include/nocopyable.h
+CMakeFiles/tinynet.dir/src/Socket.cpp.o: ../include/utils.h
+CMakeFiles/tinynet.dir/src/Socket.cpp.o: ../src/Socket.cpp
+
+CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: ../include/Logger.h
+CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: ../include/NetAddress.h
+CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: ../include/Socket.h
+CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: ../include/nocopyable.h
+CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: ../include/utils.h
+CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: ../test1/Socket_test.cpp
 

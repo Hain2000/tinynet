@@ -4,6 +4,20 @@
 CMakeFiles/tinynet.dir/src/Logger.cpp.o
  ../include/Logger.h
  /home/hain/tinynet/src/Logger.cpp
-CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o
+CMakeFiles/tinynet.dir/src/NetAddress.cpp.o
+ ../include/NetAddress.h
+ /home/hain/tinynet/src/NetAddress.cpp
+CMakeFiles/tinynet.dir/src/Socket.cpp.o
  ../include/Logger.h
- /home/hain/tinynet/test1/Logger1_test.cpp
+ ../include/NetAddress.h
+ ../include/Socket.h
+ ../include/nocopyable.h
+ ../include/utils.h
+ /home/hain/tinynet/src/Socket.cpp
+CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o
+ ../include/Logger.h
+ ../include/NetAddress.h
+ ../include/Socket.h
+ ../include/nocopyable.h
+ ../include/utils.h
+ /home/hain/tinynet/test1/Socket_test.cpp

@@ -9,7 +9,12 @@ include_directories(.)
 include_directories(include)
 
 add_executable(tinynet
-        src/Logger.cpp
+        src/NetAddress.cpp
+        include/NetAddress.h
+        src/Socket.cpp
+        include/Socket.h
         include/Logger.h
-        test1/Logger1_test.cpp
+        src/Logger.cpp
+        test1/Socket_test.cpp
+        src/Socket.cpp
 )

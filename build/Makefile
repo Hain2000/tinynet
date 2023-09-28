@@ -150,32 +150,86 @@ src/Logger.cpp.s:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Logger.cpp.s
 .PHONY : src/Logger.cpp.s
 
-test1/Logger1_test.o: test1/Logger1_test.cpp.o
+src/NetAddress.o: src/NetAddress.cpp.o
 
-.PHONY : test1/Logger1_test.o
+.PHONY : src/NetAddress.o
 
 # target to build an object file
-test1/Logger1_test.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.o
-.PHONY : test1/Logger1_test.cpp.o
+src/NetAddress.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/NetAddress.cpp.o
+.PHONY : src/NetAddress.cpp.o
 
-test1/Logger1_test.i: test1/Logger1_test.cpp.i
+src/NetAddress.i: src/NetAddress.cpp.i
 
-.PHONY : test1/Logger1_test.i
+.PHONY : src/NetAddress.i
 
 # target to preprocess a source file
-test1/Logger1_test.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.i
-.PHONY : test1/Logger1_test.cpp.i
+src/NetAddress.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/NetAddress.cpp.i
+.PHONY : src/NetAddress.cpp.i
 
-test1/Logger1_test.s: test1/Logger1_test.cpp.s
+src/NetAddress.s: src/NetAddress.cpp.s
 
-.PHONY : test1/Logger1_test.s
+.PHONY : src/NetAddress.s
 
 # target to generate assembly for a file
-test1/Logger1_test.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Logger1_test.cpp.s
-.PHONY : test1/Logger1_test.cpp.s
+src/NetAddress.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/NetAddress.cpp.s
+.PHONY : src/NetAddress.cpp.s
+
+src/Socket.o: src/Socket.cpp.o
+
+.PHONY : src/Socket.o
+
+# target to build an object file
+src/Socket.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.o
+.PHONY : src/Socket.cpp.o
+
+src/Socket.i: src/Socket.cpp.i
+
+.PHONY : src/Socket.i
+
+# target to preprocess a source file
+src/Socket.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.i
+.PHONY : src/Socket.cpp.i
+
+src/Socket.s: src/Socket.cpp.s
+
+.PHONY : src/Socket.s
+
+# target to generate assembly for a file
+src/Socket.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.s
+.PHONY : src/Socket.cpp.s
+
+test1/Socket_test.o: test1/Socket_test.cpp.o
+
+.PHONY : test1/Socket_test.o
+
+# target to build an object file
+test1/Socket_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o
+.PHONY : test1/Socket_test.cpp.o
+
+test1/Socket_test.i: test1/Socket_test.cpp.i
+
+.PHONY : test1/Socket_test.i
+
+# target to preprocess a source file
+test1/Socket_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Socket_test.cpp.i
+.PHONY : test1/Socket_test.cpp.i
+
+test1/Socket_test.s: test1/Socket_test.cpp.s
+
+.PHONY : test1/Socket_test.s
+
+# target to generate assembly for a file
+test1/Socket_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Socket_test.cpp.s
+.PHONY : test1/Socket_test.cpp.s
 
 # Help Target
 help:
@@ -189,9 +243,15 @@ help:
 	@echo "... src/Logger.o"
 	@echo "... src/Logger.i"
 	@echo "... src/Logger.s"
-	@echo "... test1/Logger1_test.o"
-	@echo "... test1/Logger1_test.i"
-	@echo "... test1/Logger1_test.s"
+	@echo "... src/NetAddress.o"
+	@echo "... src/NetAddress.i"
+	@echo "... src/NetAddress.s"
+	@echo "... src/Socket.o"
+	@echo "... src/Socket.i"
+	@echo "... src/Socket.s"
+	@echo "... test1/Socket_test.o"
+	@echo "... test1/Socket_test.i"
+	@echo "... test1/Socket_test.s"
 .PHONY : help
 
 

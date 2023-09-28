@@ -51,15 +51,15 @@ public:
     static Logger &Instance();
 
 private:
-    explicit Logger(const std::function<void(const std::deque<Log> &logs)> &log_strategy);
+    explicit Logger(const std::function<void(const std::vector<Log> &logs)> &log_strategy);
 
     ~Logger();
 
     void writing_log();
     void push_log(Log &&log);
 
-    std::function<void(const std::deque<Log> &)> log_strategy_func_;
-    std::deque<Log> q_; //
+    std::function<void(const std::vector<Log> &)> log_strategy_func_;
+    std::vector<Log> logs_;
     std::atomic<bool> stop_{false};
     std::mutex mtx_;
     std::thread log_writer_;
