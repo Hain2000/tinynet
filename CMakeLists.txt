@@ -13,8 +13,14 @@ add_executable(tinynet
         include/NetAddress.h
         src/Socket.cpp
         include/Socket.h
+        src/Socket.cpp
         include/Logger.h
         src/Logger.cpp
-        test1/Socket_test.cpp
-        src/Socket.cpp
+        include/Connection.h
+        src/Connection.cpp
+        include/Epoll.h
+        src/Epoll.cpp
+        include/EventLoop.h
+        src/EventLoop.cpp
+        test1/EventLoop1_test.cpp
 )

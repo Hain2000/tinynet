@@ -96,25 +96,67 @@ CMakeFiles/tinynet.dir/src/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/Logger.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/Logger.cpp -o CMakeFiles/tinynet.dir/src/Logger.cpp.s
 
-CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: CMakeFiles/tinynet.dir/flags.make
-CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o: ../test1/Socket_test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o -c /home/hain/tinynet/test1/Socket_test.cpp
+CMakeFiles/tinynet.dir/src/Connection.cpp.o: CMakeFiles/tinynet.dir/flags.make
+CMakeFiles/tinynet.dir/src/Connection.cpp.o: ../src/Connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/tinynet.dir/src/Connection.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/src/Connection.cpp.o -c /home/hain/tinynet/src/Connection.cpp
 
-CMakeFiles/tinynet.dir/test1/Socket_test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/test1/Socket_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/test1/Socket_test.cpp > CMakeFiles/tinynet.dir/test1/Socket_test.cpp.i
+CMakeFiles/tinynet.dir/src/Connection.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/src/Connection.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/src/Connection.cpp > CMakeFiles/tinynet.dir/src/Connection.cpp.i
 
-CMakeFiles/tinynet.dir/test1/Socket_test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/test1/Socket_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/test1/Socket_test.cpp -o CMakeFiles/tinynet.dir/test1/Socket_test.cpp.s
+CMakeFiles/tinynet.dir/src/Connection.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/Connection.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/Connection.cpp -o CMakeFiles/tinynet.dir/src/Connection.cpp.s
+
+CMakeFiles/tinynet.dir/src/Epoll.cpp.o: CMakeFiles/tinynet.dir/flags.make
+CMakeFiles/tinynet.dir/src/Epoll.cpp.o: ../src/Epoll.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/tinynet.dir/src/Epoll.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/src/Epoll.cpp.o -c /home/hain/tinynet/src/Epoll.cpp
+
+CMakeFiles/tinynet.dir/src/Epoll.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/src/Epoll.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/src/Epoll.cpp > CMakeFiles/tinynet.dir/src/Epoll.cpp.i
+
+CMakeFiles/tinynet.dir/src/Epoll.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/Epoll.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/Epoll.cpp -o CMakeFiles/tinynet.dir/src/Epoll.cpp.s
+
+CMakeFiles/tinynet.dir/src/EventLoop.cpp.o: CMakeFiles/tinynet.dir/flags.make
+CMakeFiles/tinynet.dir/src/EventLoop.cpp.o: ../src/EventLoop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/tinynet.dir/src/EventLoop.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/src/EventLoop.cpp.o -c /home/hain/tinynet/src/EventLoop.cpp
+
+CMakeFiles/tinynet.dir/src/EventLoop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/src/EventLoop.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/src/EventLoop.cpp > CMakeFiles/tinynet.dir/src/EventLoop.cpp.i
+
+CMakeFiles/tinynet.dir/src/EventLoop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/src/EventLoop.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/src/EventLoop.cpp -o CMakeFiles/tinynet.dir/src/EventLoop.cpp.s
+
+CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o: CMakeFiles/tinynet.dir/flags.make
+CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o: ../test1/EventLoop1_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o -c /home/hain/tinynet/test1/EventLoop1_test.cpp
+
+CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hain/tinynet/test1/EventLoop1_test.cpp > CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.i
+
+CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hain/tinynet/test1/EventLoop1_test.cpp -o CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.s
 
 # Object files for target tinynet
 tinynet_OBJECTS = \
 "CMakeFiles/tinynet.dir/src/NetAddress.cpp.o" \
 "CMakeFiles/tinynet.dir/src/Socket.cpp.o" \
 "CMakeFiles/tinynet.dir/src/Logger.cpp.o" \
-"CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o"
+"CMakeFiles/tinynet.dir/src/Connection.cpp.o" \
+"CMakeFiles/tinynet.dir/src/Epoll.cpp.o" \
+"CMakeFiles/tinynet.dir/src/EventLoop.cpp.o" \
+"CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o"
 
 # External object files for target tinynet
 tinynet_EXTERNAL_OBJECTS =
@@ -122,10 +164,13 @@ tinynet_EXTERNAL_OBJECTS =
 tinynet: CMakeFiles/tinynet.dir/src/NetAddress.cpp.o
 tinynet: CMakeFiles/tinynet.dir/src/Socket.cpp.o
 tinynet: CMakeFiles/tinynet.dir/src/Logger.cpp.o
-tinynet: CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o
+tinynet: CMakeFiles/tinynet.dir/src/Connection.cpp.o
+tinynet: CMakeFiles/tinynet.dir/src/Epoll.cpp.o
+tinynet: CMakeFiles/tinynet.dir/src/EventLoop.cpp.o
+tinynet: CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o
 tinynet: CMakeFiles/tinynet.dir/build.make
 tinynet: CMakeFiles/tinynet.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tinynet"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable tinynet"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tinynet.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
