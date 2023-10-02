@@ -9,18 +9,11 @@ namespace tinynet {
 EventLoop::EventLoop() : epoll_(std::make_unique<Epoll>()) {}
 
 void EventLoop::Loop() {
-    if (stop_) {
-        printf("AA\n");
-    } else {
-        printf("BB\n");
-    }
     while (!stop_) {
-        printf("CC\n");
         auto conns = epoll_->Poll();
-        printf("conns size: %lu\n", conns.size());
+
         for (auto &x : conns) {
             x->GetCallBack()();
-            printf("YYDS\n");
         }
     }
 }

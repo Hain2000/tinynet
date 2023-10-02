@@ -5,7 +5,6 @@ CMakeFiles/tinynet.dir/src/Connection.cpp.o
  ../include/Connection.h
  ../include/NetAddress.h
  ../include/Socket.h
- ../include/nocopyable.h
  ../include/utils.h
  /home/hain/tinynet/src/Connection.cpp
 CMakeFiles/tinynet.dir/src/Epoll.cpp.o
@@ -14,7 +13,6 @@ CMakeFiles/tinynet.dir/src/Epoll.cpp.o
  ../include/Logger.h
  ../include/NetAddress.h
  ../include/Socket.h
- ../include/nocopyable.h
  ../include/utils.h
  /home/hain/tinynet/src/Epoll.cpp
 CMakeFiles/tinynet.dir/src/EventLoop.cpp.o
@@ -23,7 +21,6 @@ CMakeFiles/tinynet.dir/src/EventLoop.cpp.o
  ../include/EventLoop.h
  ../include/NetAddress.h
  ../include/Socket.h
- ../include/nocopyable.h
  ../include/utils.h
  /home/hain/tinynet/src/EventLoop.cpp
 CMakeFiles/tinynet.dir/src/Logger.cpp.o
@@ -36,16 +33,26 @@ CMakeFiles/tinynet.dir/src/Socket.cpp.o
  ../include/Logger.h
  ../include/NetAddress.h
  ../include/Socket.h
- ../include/nocopyable.h
  ../include/utils.h
  /home/hain/tinynet/src/Socket.cpp
-CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o
+CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o
+ ../include/ThreadPool.h
+ /home/hain/tinynet/src/ThreadPool.cpp
+CMakeFiles/tinynet.dir/src/Timer.cpp.o
  ../include/Connection.h
  ../include/Epoll.h
- ../include/EventLoop.h
  ../include/Logger.h
  ../include/NetAddress.h
  ../include/Socket.h
- ../include/nocopyable.h
+ ../include/Timer.h
  ../include/utils.h
- /home/hain/tinynet/test1/EventLoop1_test.cpp
+ /home/hain/tinynet/src/Timer.cpp
+CMakeFiles/tinynet.dir/test1/Timer_test.cpp.o
+ ../include/Connection.h
+ ../include/Epoll.h
+ ../include/Logger.h
+ ../include/NetAddress.h
+ ../include/Socket.h
+ ../include/Timer.h
+ ../include/utils.h
+ /home/hain/tinynet/test1/Timer_test.cpp

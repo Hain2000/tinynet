@@ -86,6 +86,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hain/tinynet/include/Connection.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/Epoll.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/include/EventLoop.h">
+			<Option target="tinynet"/>
+		</Unit>
 		<Unit filename="/home/hain/tinynet/include/Logger.h">
 			<Option target="tinynet"/>
 		</Unit>
@@ -93,6 +102,15 @@
 			<Option target="tinynet"/>
 		</Unit>
 		<Unit filename="/home/hain/tinynet/include/Socket.h">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/Connection.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/Epoll.cpp">
+			<Option target="tinynet"/>
+		</Unit>
+		<Unit filename="/home/hain/tinynet/src/EventLoop.cpp">
 			<Option target="tinynet"/>
 		</Unit>
 		<Unit filename="/home/hain/tinynet/src/Logger.cpp">
@@ -104,7 +122,7 @@
 		<Unit filename="/home/hain/tinynet/src/Socket.cpp">
 			<Option target="tinynet"/>
 		</Unit>
-		<Unit filename="/home/hain/tinynet/test1/Socket_test.cpp">
+		<Unit filename="/home/hain/tinynet/test1/EventLoop1_test.cpp">
 			<Option target="tinynet"/>
 		</Unit>
 		<Unit filename="/home/hain/tinynet/CMakeLists.txt">

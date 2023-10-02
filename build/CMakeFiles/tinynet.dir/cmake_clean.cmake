@@ -5,7 +5,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/tinynet.dir/src/Logger.cpp.o"
   "CMakeFiles/tinynet.dir/src/NetAddress.cpp.o"
   "CMakeFiles/tinynet.dir/src/Socket.cpp.o"
-  "CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o"
+  "CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o"
+  "CMakeFiles/tinynet.dir/src/Timer.cpp.o"
+  "CMakeFiles/tinynet.dir/test1/Timer_test.cpp.o"
   "tinynet"
   "tinynet.pdb"
 )

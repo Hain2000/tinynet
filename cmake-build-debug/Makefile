@@ -123,6 +123,87 @@ tinynet/fast:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/build
 .PHONY : tinynet/fast
 
+src/Connection.o: src/Connection.cpp.o
+
+.PHONY : src/Connection.o
+
+# target to build an object file
+src/Connection.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Connection.cpp.o
+.PHONY : src/Connection.cpp.o
+
+src/Connection.i: src/Connection.cpp.i
+
+.PHONY : src/Connection.i
+
+# target to preprocess a source file
+src/Connection.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Connection.cpp.i
+.PHONY : src/Connection.cpp.i
+
+src/Connection.s: src/Connection.cpp.s
+
+.PHONY : src/Connection.s
+
+# target to generate assembly for a file
+src/Connection.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Connection.cpp.s
+.PHONY : src/Connection.cpp.s
+
+src/Epoll.o: src/Epoll.cpp.o
+
+.PHONY : src/Epoll.o
+
+# target to build an object file
+src/Epoll.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Epoll.cpp.o
+.PHONY : src/Epoll.cpp.o
+
+src/Epoll.i: src/Epoll.cpp.i
+
+.PHONY : src/Epoll.i
+
+# target to preprocess a source file
+src/Epoll.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Epoll.cpp.i
+.PHONY : src/Epoll.cpp.i
+
+src/Epoll.s: src/Epoll.cpp.s
+
+.PHONY : src/Epoll.s
+
+# target to generate assembly for a file
+src/Epoll.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Epoll.cpp.s
+.PHONY : src/Epoll.cpp.s
+
+src/EventLoop.o: src/EventLoop.cpp.o
+
+.PHONY : src/EventLoop.o
+
+# target to build an object file
+src/EventLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/EventLoop.cpp.o
+.PHONY : src/EventLoop.cpp.o
+
+src/EventLoop.i: src/EventLoop.cpp.i
+
+.PHONY : src/EventLoop.i
+
+# target to preprocess a source file
+src/EventLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/EventLoop.cpp.i
+.PHONY : src/EventLoop.cpp.i
+
+src/EventLoop.s: src/EventLoop.cpp.s
+
+.PHONY : src/EventLoop.s
+
+# target to generate assembly for a file
+src/EventLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/EventLoop.cpp.s
+.PHONY : src/EventLoop.cpp.s
+
 src/Logger.o: src/Logger.cpp.o
 
 .PHONY : src/Logger.o
@@ -204,32 +285,32 @@ src/Socket.cpp.s:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.s
 .PHONY : src/Socket.cpp.s
 
-test1/Socket_test.o: test1/Socket_test.cpp.o
+test1/EventLoop1_test.o: test1/EventLoop1_test.cpp.o
 
-.PHONY : test1/Socket_test.o
+.PHONY : test1/EventLoop1_test.o
 
 # target to build an object file
-test1/Socket_test.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Socket_test.cpp.o
-.PHONY : test1/Socket_test.cpp.o
+test1/EventLoop1_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o
+.PHONY : test1/EventLoop1_test.cpp.o
 
-test1/Socket_test.i: test1/Socket_test.cpp.i
+test1/EventLoop1_test.i: test1/EventLoop1_test.cpp.i
 
-.PHONY : test1/Socket_test.i
+.PHONY : test1/EventLoop1_test.i
 
 # target to preprocess a source file
-test1/Socket_test.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Socket_test.cpp.i
-.PHONY : test1/Socket_test.cpp.i
+test1/EventLoop1_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.i
+.PHONY : test1/EventLoop1_test.cpp.i
 
-test1/Socket_test.s: test1/Socket_test.cpp.s
+test1/EventLoop1_test.s: test1/EventLoop1_test.cpp.s
 
-.PHONY : test1/Socket_test.s
+.PHONY : test1/EventLoop1_test.s
 
 # target to generate assembly for a file
-test1/Socket_test.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Socket_test.cpp.s
-.PHONY : test1/Socket_test.cpp.s
+test1/EventLoop1_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.s
+.PHONY : test1/EventLoop1_test.cpp.s
 
 # Help Target
 help:
@@ -240,6 +321,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tinynet"
+	@echo "... src/Connection.o"
+	@echo "... src/Connection.i"
+	@echo "... src/Connection.s"
+	@echo "... src/Epoll.o"
+	@echo "... src/Epoll.i"
+	@echo "... src/Epoll.s"
+	@echo "... src/EventLoop.o"
+	@echo "... src/EventLoop.i"
+	@echo "... src/EventLoop.s"
 	@echo "... src/Logger.o"
 	@echo "... src/Logger.i"
 	@echo "... src/Logger.s"
@@ -249,9 +339,9 @@ help:
 	@echo "... src/Socket.o"
 	@echo "... src/Socket.i"
 	@echo "... src/Socket.s"
-	@echo "... test1/Socket_test.o"
-	@echo "... test1/Socket_test.i"
-	@echo "... test1/Socket_test.s"
+	@echo "... test1/EventLoop1_test.o"
+	@echo "... test1/EventLoop1_test.i"
+	@echo "... test1/EventLoop1_test.s"
 .PHONY : help
 
 

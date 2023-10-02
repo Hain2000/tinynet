@@ -6,9 +6,29 @@
 #define TINYNET_UTILS_H
 
 #include <atomic>
-#include "nocopyable.h"
-
+#include <iostream>
+#include <cassert>
 namespace tinynet {
+
+
+static void println() { std::cerr << '\n'; }
+
+template<typename Head, typename... Tail>
+static void println(Head H, Tail ...T) {
+    std::cerr << H << " ";
+    println(T...);
+}
+
+#define CHECK(ok)    \
+    if (ok) {             \
+        println("OK");    \
+    } else {              \
+        println("ERROR", __FILE__, __LINE__); \
+    }
+
+
+
+#define ThreadMillisecondSleep(x) std::this_thread::sleep_for(std::chrono::milliseconds(static_cast<uint64_t>(x)))
 
 class spin_lock {
     std::atomic_flag flag_;
@@ -22,7 +42,7 @@ public:
     }
 };
 
-class spinlock_guard : nocopyable {
+class spinlock_guard {
     spin_lock &lock_;
 public:
     spinlock_guard(spin_lock &lock) : lock_(lock) {

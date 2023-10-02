@@ -18,7 +18,7 @@ void CHECK(bool ok) {
     if (ok) {
         printf("OK!\n");
     } else {
-        printf("ERROR!, %d\n", __LINE__);
+        printf("ERROR!");
     }
 }
 
