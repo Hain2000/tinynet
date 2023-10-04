@@ -53,7 +53,8 @@ CMAKE_BINARY_DIR = /home/hain/tinynet/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/tinynet.dir/all
+all: CMakeFiles/echo_client.dir/all
+all: CMakeFiles/echo_server.dir/all
 
 .PHONY : all
 
@@ -63,36 +64,64 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/tinynet.dir/clean
+clean: CMakeFiles/echo_client.dir/clean
+clean: CMakeFiles/echo_server.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tinynet.dir
+# Target rules for target CMakeFiles/echo_client.dir
 
 # All Build rule for target.
-CMakeFiles/tinynet.dir/all:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/depend
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target tinynet"
-.PHONY : CMakeFiles/tinynet.dir/all
+CMakeFiles/echo_client.dir/all:
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/depend
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target echo_client"
+.PHONY : CMakeFiles/echo_client.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tinynet.dir/rule: cmake_check_build_system
+CMakeFiles/echo_client.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hain/tinynet/build/CMakeFiles 12
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tinynet.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/echo_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hain/tinynet/build/CMakeFiles 0
-.PHONY : CMakeFiles/tinynet.dir/rule
+.PHONY : CMakeFiles/echo_client.dir/rule
 
 # Convenience name for target.
-tinynet: CMakeFiles/tinynet.dir/rule
+echo_client: CMakeFiles/echo_client.dir/rule
 
-.PHONY : tinynet
+.PHONY : echo_client
 
 # clean rule for target.
-CMakeFiles/tinynet.dir/clean:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/clean
-.PHONY : CMakeFiles/tinynet.dir/clean
+CMakeFiles/echo_client.dir/clean:
+	$(MAKE) -f CMakeFiles/echo_client.dir/build.make CMakeFiles/echo_client.dir/clean
+.PHONY : CMakeFiles/echo_client.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/echo_server.dir
+
+# All Build rule for target.
+CMakeFiles/echo_server.dir/all:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/depend
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hain/tinynet/build/CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24 "Built target echo_server"
+.PHONY : CMakeFiles/echo_server.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/echo_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hain/tinynet/build/CMakeFiles 12
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/echo_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hain/tinynet/build/CMakeFiles 0
+.PHONY : CMakeFiles/echo_server.dir/rule
+
+# Convenience name for target.
+echo_server: CMakeFiles/echo_server.dir/rule
+
+.PHONY : echo_server
+
+# clean rule for target.
+CMakeFiles/echo_server.dir/clean:
+	$(MAKE) -f CMakeFiles/echo_server.dir/build.make CMakeFiles/echo_server.dir/clean
+.PHONY : CMakeFiles/echo_server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
