@@ -123,6 +123,33 @@ tinynet/fast:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/build
 .PHONY : tinynet/fast
 
+src/Buffer.o: src/Buffer.cpp.o
+
+.PHONY : src/Buffer.o
+
+# target to build an object file
+src/Buffer.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Buffer.cpp.o
+.PHONY : src/Buffer.cpp.o
+
+src/Buffer.i: src/Buffer.cpp.i
+
+.PHONY : src/Buffer.i
+
+# target to preprocess a source file
+src/Buffer.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Buffer.cpp.i
+.PHONY : src/Buffer.cpp.i
+
+src/Buffer.s: src/Buffer.cpp.s
+
+.PHONY : src/Buffer.s
+
+# target to generate assembly for a file
+src/Buffer.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Buffer.cpp.s
+.PHONY : src/Buffer.cpp.s
+
 src/Connection.o: src/Connection.cpp.o
 
 .PHONY : src/Connection.o
@@ -285,32 +312,86 @@ src/Socket.cpp.s:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Socket.cpp.s
 .PHONY : src/Socket.cpp.s
 
-test1/EventLoop1_test.o: test1/EventLoop1_test.cpp.o
+src/ThreadPool.o: src/ThreadPool.cpp.o
 
-.PHONY : test1/EventLoop1_test.o
+.PHONY : src/ThreadPool.o
 
 # target to build an object file
-test1/EventLoop1_test.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.o
-.PHONY : test1/EventLoop1_test.cpp.o
+src/ThreadPool.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o
+.PHONY : src/ThreadPool.cpp.o
 
-test1/EventLoop1_test.i: test1/EventLoop1_test.cpp.i
+src/ThreadPool.i: src/ThreadPool.cpp.i
 
-.PHONY : test1/EventLoop1_test.i
+.PHONY : src/ThreadPool.i
 
 # target to preprocess a source file
-test1/EventLoop1_test.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.i
-.PHONY : test1/EventLoop1_test.cpp.i
+src/ThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/ThreadPool.cpp.i
+.PHONY : src/ThreadPool.cpp.i
 
-test1/EventLoop1_test.s: test1/EventLoop1_test.cpp.s
+src/ThreadPool.s: src/ThreadPool.cpp.s
 
-.PHONY : test1/EventLoop1_test.s
+.PHONY : src/ThreadPool.s
 
 # target to generate assembly for a file
-test1/EventLoop1_test.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/EventLoop1_test.cpp.s
-.PHONY : test1/EventLoop1_test.cpp.s
+src/ThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/ThreadPool.cpp.s
+.PHONY : src/ThreadPool.cpp.s
+
+src/Timer.o: src/Timer.cpp.o
+
+.PHONY : src/Timer.o
+
+# target to build an object file
+src/Timer.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Timer.cpp.o
+.PHONY : src/Timer.cpp.o
+
+src/Timer.i: src/Timer.cpp.i
+
+.PHONY : src/Timer.i
+
+# target to preprocess a source file
+src/Timer.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Timer.cpp.i
+.PHONY : src/Timer.cpp.i
+
+src/Timer.s: src/Timer.cpp.s
+
+.PHONY : src/Timer.s
+
+# target to generate assembly for a file
+src/Timer.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Timer.cpp.s
+.PHONY : src/Timer.cpp.s
+
+test2/time_test.o: test2/time_test.cpp.o
+
+.PHONY : test2/time_test.o
+
+# target to build an object file
+test2/time_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test2/time_test.cpp.o
+.PHONY : test2/time_test.cpp.o
+
+test2/time_test.i: test2/time_test.cpp.i
+
+.PHONY : test2/time_test.i
+
+# target to preprocess a source file
+test2/time_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test2/time_test.cpp.i
+.PHONY : test2/time_test.cpp.i
+
+test2/time_test.s: test2/time_test.cpp.s
+
+.PHONY : test2/time_test.s
+
+# target to generate assembly for a file
+test2/time_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test2/time_test.cpp.s
+.PHONY : test2/time_test.cpp.s
 
 # Help Target
 help:
@@ -321,6 +402,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tinynet"
+	@echo "... src/Buffer.o"
+	@echo "... src/Buffer.i"
+	@echo "... src/Buffer.s"
 	@echo "... src/Connection.o"
 	@echo "... src/Connection.i"
 	@echo "... src/Connection.s"
@@ -339,9 +423,15 @@ help:
 	@echo "... src/Socket.o"
 	@echo "... src/Socket.i"
 	@echo "... src/Socket.s"
-	@echo "... test1/EventLoop1_test.o"
-	@echo "... test1/EventLoop1_test.i"
-	@echo "... test1/EventLoop1_test.s"
+	@echo "... src/ThreadPool.o"
+	@echo "... src/ThreadPool.i"
+	@echo "... src/ThreadPool.s"
+	@echo "... src/Timer.o"
+	@echo "... src/Timer.i"
+	@echo "... src/Timer.s"
+	@echo "... test2/time_test.o"
+	@echo "... test2/time_test.i"
+	@echo "... test2/time_test.s"
 .PHONY : help
 
 

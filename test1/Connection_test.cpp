@@ -7,20 +7,12 @@
 #include "Socket.h"
 #include <cassert>
 #include <iostream>
-#include <atomic>
 #include <memory>
 #include <numeric>
 #include <thread>
-#include <vector>
+#include "utils.h"
 using namespace tinynet;
 
-void CHECK(bool ok) {
-    if (ok) {
-        printf("OK!\n");
-    } else {
-        printf("ERROR!, %d\n", __LINE__);
-    }
-}
 
 int main() {
     NetAddress local_host("127.0.0.1", 20080);
@@ -41,4 +33,37 @@ int main() {
     server_conn.SetCallBack([&target = i](Connection *) -> void { target += 1; });
     server_conn.GetCallBack()();
     CHECK(i == 1);
+
+    println("Buffer Test");
+    const char *client_message = "hello from client";
+    const char *server_message = "hello from server";
+    std::thread client_thread([&]() {
+        auto client_sock = std::make_unique<Socket>();
+        client_sock->Connect(local_host);
+        Connection client_conn(std::move(client_sock));
+
+        client_conn.WriteToWriteBuffer(client_message);
+        CHECK(client_conn.GetWriteBufferSize() == strlen(client_message));
+        client_conn.Send();
+
+        sleep(1);
+
+        auto [read, exit] = client_conn.Recv();
+        CHECK((read == strlen(server_message) && exit));
+        CHECK(client_conn.ReadAsString() == std::string(server_message));
+    });
+    sleep(1);
+    client_thread.detach();
+    NetAddress client_address;
+    auto connected_sock = std::make_unique<Socket>(server_conn.GetSocket()->Accept(client_address));
+    connected_sock->SetNonBlockSocket();
+    CHECK(connected_sock->GetFd() != -1);
+    Connection connected_conn(std::move(connected_sock));
+    sleep(1);
+    auto [read, exit] = connected_conn.Recv();
+    CHECK((read == strlen(client_message) && !exit));
+    CHECK(connected_conn.GetReadBufferSize() == strlen(client_message));
+    connected_conn.WriteToWriteBuffer(server_message);
+    connected_conn.Send();
+    sleep(1);
 }

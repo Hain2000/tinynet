@@ -21,7 +21,7 @@ static void println(Head H, Tail ...T) {
 
 #define CHECK(ok)    \
     if (ok) {             \
-        println("OK");    \
+        println("OK", __LINE__);    \
     } else {              \
         println("ERROR", __FILE__, __LINE__); \
     }

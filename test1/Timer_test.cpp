@@ -4,6 +4,10 @@
 #include "Timer.h"
 #include <assert.h>
 #include <thread>
+#include <memory>
+#include "NetAddress.h"
+#include "Epoll.h"
+#include "EventLoop.h"
 using namespace tinynet;
 uint64_t expire = 1000;
 
@@ -84,13 +88,30 @@ void f6_test() {
     CHECK((next_expire > (now + 150) && next_expire < (now + 250)));
 }
 
+void f7_test() {
+    Epoll poller;
+    Timer t;
+    int timeout = 100;
+    poller.AddConnection(t.GetTimerConnection());
+    auto triggered = poller.Poll(timeout);
+    CHECK(triggered.empty());
+    t.AddSingleTimer(100, nullptr);
+    t.AddSingleTimer(200, nullptr);
+    t.AddSingleTimer(300, nullptr);
+    std::this_thread::sleep_for(std::chrono::milliseconds(110));
+    triggered = poller.Poll(timeout);
+    CHECK(triggered.size() == 1);
+    auto expired = t.PruneExpiredTimer();
+    CHECK(expired.size() == 1);
+    CHECK(t.TimerCount() == 2);
+    auto now = NowSinceEpoch();
+    auto next_expire = t.NextExpireTime();
+    CHECK((next_expire > now + 75 && next_expire < now + 125));
+}
+
 
 
 int main() {
-    f1_test();
-    f2_test();
-    f3_test();
-    f4_test();
-    f5_test();
-    f6_test();
+    f7_test();
+
 }

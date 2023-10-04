@@ -34,6 +34,7 @@ public:
 
     auto GetSize() -> size_t { return threads_.size(); };
 
+
 private:
     std::vector<std::thread> threads_;
     std::queue<std::function<void()>> tasks_;

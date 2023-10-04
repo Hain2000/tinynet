@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/tinynet.dir/src/Buffer.cpp.o"
   "CMakeFiles/tinynet.dir/src/Connection.cpp.o"
   "CMakeFiles/tinynet.dir/src/Epoll.cpp.o"
   "CMakeFiles/tinynet.dir/src/EventLoop.cpp.o"
@@ -7,7 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/tinynet.dir/src/Socket.cpp.o"
   "CMakeFiles/tinynet.dir/src/ThreadPool.cpp.o"
   "CMakeFiles/tinynet.dir/src/Timer.cpp.o"
-  "CMakeFiles/tinynet.dir/test1/Timer_test.cpp.o"
+  "CMakeFiles/tinynet.dir/test1/Connection_test.cpp.o"
   "tinynet"
   "tinynet.pdb"
 )
