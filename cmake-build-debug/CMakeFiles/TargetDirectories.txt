@@ -1,3 +1,0 @@
-/home/hain/tinynet/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/hain/tinynet/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/hain/tinynet/cmake-build-debug/CMakeFiles/tinynet.dir
