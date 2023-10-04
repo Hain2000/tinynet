@@ -123,6 +123,33 @@ tinynet/fast:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/build
 .PHONY : tinynet/fast
 
+src/Acceptor.o: src/Acceptor.cpp.o
+
+.PHONY : src/Acceptor.o
+
+# target to build an object file
+src/Acceptor.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Acceptor.cpp.o
+.PHONY : src/Acceptor.cpp.o
+
+src/Acceptor.i: src/Acceptor.cpp.i
+
+.PHONY : src/Acceptor.i
+
+# target to preprocess a source file
+src/Acceptor.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Acceptor.cpp.i
+.PHONY : src/Acceptor.cpp.i
+
+src/Acceptor.s: src/Acceptor.cpp.s
+
+.PHONY : src/Acceptor.s
+
+# target to generate assembly for a file
+src/Acceptor.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Acceptor.cpp.s
+.PHONY : src/Acceptor.cpp.s
+
 src/Buffer.o: src/Buffer.cpp.o
 
 .PHONY : src/Buffer.o
@@ -366,32 +393,32 @@ src/Timer.cpp.s:
 	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/src/Timer.cpp.s
 .PHONY : src/Timer.cpp.s
 
-test1/Connection_test.o: test1/Connection_test.cpp.o
+test1/Acceptor_test.o: test1/Acceptor_test.cpp.o
 
-.PHONY : test1/Connection_test.o
+.PHONY : test1/Acceptor_test.o
 
 # target to build an object file
-test1/Connection_test.cpp.o:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Connection_test.cpp.o
-.PHONY : test1/Connection_test.cpp.o
+test1/Acceptor_test.cpp.o:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Acceptor_test.cpp.o
+.PHONY : test1/Acceptor_test.cpp.o
 
-test1/Connection_test.i: test1/Connection_test.cpp.i
+test1/Acceptor_test.i: test1/Acceptor_test.cpp.i
 
-.PHONY : test1/Connection_test.i
+.PHONY : test1/Acceptor_test.i
 
 # target to preprocess a source file
-test1/Connection_test.cpp.i:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Connection_test.cpp.i
-.PHONY : test1/Connection_test.cpp.i
+test1/Acceptor_test.cpp.i:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Acceptor_test.cpp.i
+.PHONY : test1/Acceptor_test.cpp.i
 
-test1/Connection_test.s: test1/Connection_test.cpp.s
+test1/Acceptor_test.s: test1/Acceptor_test.cpp.s
 
-.PHONY : test1/Connection_test.s
+.PHONY : test1/Acceptor_test.s
 
 # target to generate assembly for a file
-test1/Connection_test.cpp.s:
-	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Connection_test.cpp.s
-.PHONY : test1/Connection_test.cpp.s
+test1/Acceptor_test.cpp.s:
+	$(MAKE) -f CMakeFiles/tinynet.dir/build.make CMakeFiles/tinynet.dir/test1/Acceptor_test.cpp.s
+.PHONY : test1/Acceptor_test.cpp.s
 
 # Help Target
 help:
@@ -402,6 +429,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... tinynet"
+	@echo "... src/Acceptor.o"
+	@echo "... src/Acceptor.i"
+	@echo "... src/Acceptor.s"
 	@echo "... src/Buffer.o"
 	@echo "... src/Buffer.i"
 	@echo "... src/Buffer.s"
@@ -429,9 +459,9 @@ help:
 	@echo "... src/Timer.o"
 	@echo "... src/Timer.i"
 	@echo "... src/Timer.s"
-	@echo "... test1/Connection_test.o"
-	@echo "... test1/Connection_test.i"
-	@echo "... test1/Connection_test.s"
+	@echo "... test1/Acceptor_test.o"
+	@echo "... test1/Acceptor_test.i"
+	@echo "... test1/Acceptor_test.s"
 .PHONY : help
 
 

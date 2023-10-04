@@ -20,7 +20,7 @@ class Connection;
 
 class EventLoop {
 public:
-    EventLoop(uint64_t timer_expiration);
+    EventLoop(uint64_t timer_expiration = 0);
 
     void Loop();
 
@@ -33,6 +33,9 @@ public:
     auto DeleteConnection(int fd) noexcept -> bool;
 
     void SetStop() noexcept;
+
+    auto ConnectionsSize() noexcept -> const size_t;
+
 private:
     std::mutex mtx_;
     std::unique_ptr<Epoll> epoll_;

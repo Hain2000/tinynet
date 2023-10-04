@@ -92,4 +92,8 @@ void EventLoop::SetStop() noexcept {
     stop_ = true;
 }
 
+auto EventLoop::ConnectionsSize() noexcept -> const size_t {
+    return connections_.size();
+}
+
 }

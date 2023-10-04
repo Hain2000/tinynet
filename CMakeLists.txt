@@ -11,4 +11,4 @@ include_directories(include)
 
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
-add_executable(tinynet ${SOURCES} test1/Connection_test.cpp)
+add_executable(tinynet ${SOURCES} test1/Acceptor_test.cpp)
